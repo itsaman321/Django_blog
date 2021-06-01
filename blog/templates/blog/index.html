@@ -1,7 +1,57 @@
 {% extends 'base.html' %}
+{% load static %}
+{% block title %} 
+My Blog 
+{% endblock title %}
 
-{% block title %} My Blog {% endblock title %}
+{% block css_files %}
+    <link rel="stylesheet" href="{% static 'blog/index.css' %}"/>
+{% endblock css_files %}
+
+
 
 {% block content %}
-<h1>Welcome to My Block</h1>
+<header id="main-navigation">
+  <h1><a href="">Aman Blog</a></h1>
+  <nav><a href="">All Posts</a></nav>
+</header>
+<section id="welcome">
+  <header>
+    <img src="" alt="Aman - Author of the blog" />
+    <h2>Aman Blog</h2>
+  </header>
+  <p>Hi I am Aman And i love to blog about the Tech and the world !</p>
+</section>
+<section id="latest-posts">
+  <h2>My Latest Posts</h2>
+  <ul>
+    <li>
+      <article class="post">
+        <a href="">
+          <img src="" alt="Mountain" />
+          <div class="post__content">
+            <h3>Mountain Hiking</h3>
+            <p>
+              There's Nothing Like Views when hiking in the Mountain s bla bla
+              bla ..
+            </p>
+          </div>
+        </a>
+      </article>
+    </li>
+  </ul>
+</section>
+
+<section id="about">
+  <h2>What i do</h2>
+  <p>
+    asdjasiojdasdasodjasdlkasfkkflnsdklvsj
+    djvsdseijfiosjefsjdjsdvi9jjeifjvcisjvoievjsev
+  </p>
+  <p>
+    My Goal is to keep on going and i would help to do you the same go to
+    hell...
+  </p>
+</section>
+
 {% endblock content %}
